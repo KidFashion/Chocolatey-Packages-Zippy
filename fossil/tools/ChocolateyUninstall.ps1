@@ -1,1 +1,1 @@
-# Empty to avoid warning message
+﻿write-host -backgroundColor Red "NOTICE: Uninstall also fossil.portable package with command 'CUNINST fossil.portable' to complete uninstall"

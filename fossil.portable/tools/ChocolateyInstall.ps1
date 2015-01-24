@@ -1,6 +1,7 @@
-try {
+﻿try {
   $package = 'fossil'
-  $url = 'http://www.fossil-scm.org/download/fossil-w32-20130911114349.zip'
+  $PackageVersion = "1.30"
+  $url = "http://www.fossil-scm.org/download/fossil-w32-20150119112900.zip"
   $destination = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)" 
 
   Install-ChocolateyZipPackage $package -url $url -unzipLocation $destination
@@ -8,5 +9,3 @@ try {
   Write-ChocolateyFailure $package "$($_.Exception.Message)"
   throw
 }
-
-#
